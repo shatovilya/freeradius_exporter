@@ -29,7 +29,7 @@ services:
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     ports:
-      - ${EXTERNAL_PORT_EXPORTER:-unless-stopped}:9812/tcp
+      - ${EXTERNAL_PORT_EXPORTER:-9812}:9812/tcp
 
 networks:
   freeradius_exporter:
